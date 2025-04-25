@@ -1,0 +1,67 @@
+/* Card Row Container */
+.card-row {
+    display: flex;
+    flex-wrap: wrap;       /* Allows cards to wrap to next line if needed */
+    justify-content: center; /* Centers cards horizontally */
+    gap: 20px;            /* Space between cards */
+    margin-bottom: 20px;  /* Space between rows */
+    padding: 0 20px;      /* Prevents cards from touching screen edges */
+  }
+  
+  /* Card Styling (Matches your design) */
+  .card {
+    flex: 1 1 250px;      /* Flex-grow | Flex-shrink | Min-width (flex-basis) */
+    max-width: flex;     /* Prevents cards from getting too wide */
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+  }
+
+  /* Card section container */
+.card-section {
+    max-width: 5000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styling */
+  .card-header {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .card-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Existing card row styles */
+  .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card .card-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    color: hsl(0, 0%, 20%);
+  }
+  
+  .card .card-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color: hsl(0, 0%, 30%);
+  }

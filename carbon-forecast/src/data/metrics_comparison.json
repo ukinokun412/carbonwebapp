@@ -1,0 +1,65 @@
+[
+{
+  "type": "bar",
+  "data": {
+    "labels": [
+      "one step",
+      "dynamic",
+      "hybrid"
+    ],
+    "datasets": [
+      {
+        "label": "RMSE",
+        "data": [
+          2.023586005367039,
+          3.7935943665798124,
+          3.879228123729038
+        ],
+        "backgroundColor": "rgba(54, 162, 235, 0.7)"
+      },
+      {
+        "label": "MAE",
+        "data": [
+          1.6922119348361795,
+          2.9319622623244292,
+          3.250571526773009
+        ],
+        "backgroundColor": "rgba(255, 99, 132, 0.7)"
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Model Performance Comparison"
+      },
+      "legend": {
+        "position": "top"
+      },
+      "pan":{
+        "enabled": true,
+        "mode": "xy"
+      },
+      "zoom": {
+        "mode":"xy",
+        "wheel":{
+          "enabled": true
+        }
+      },
+      "drag": {
+        "enabled": true
+      }
+    },
+    "scales": {
+      "y": {
+        "title": {
+          "display": true,
+          "text": "Error Value"
+        }
+      }
+    }
+  }
+}
+]

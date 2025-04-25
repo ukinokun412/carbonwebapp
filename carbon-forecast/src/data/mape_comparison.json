@@ -1,0 +1,56 @@
+[
+{
+  "type": "bar",
+  "data": {
+    "labels": [
+      "one step",
+      "dynamic",
+      "hybrid"
+    ],
+    "datasets": [
+      {
+        "label": "MAPE",
+        "data": [
+          4.290033440375574,
+          7.454853492601559,
+          7.967869348444463
+        ],
+        "backgroundColor": "rgba(255, 159, 64, 0.7)"
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Mean Absolute Percentage Error (MAPE) Comparison"
+      },
+      "legend": {
+        "display": false
+      },
+      "pan":{
+        "enabled": true,
+        "mode": "xy"
+      },
+      "zoom": {
+        "mode":"xy",
+        "wheel":{
+          "enabled": true
+        }
+      },
+      "drag": {
+        "enabled": true
+      }
+    },
+    "scales": {
+      "y": {
+        "title": {
+          "display": true,
+          "text": "MAPE (%)"
+        }
+      }
+    }
+  }
+}
+]

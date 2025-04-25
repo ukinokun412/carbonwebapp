@@ -1,0 +1,95 @@
+/* Main Dashboard Styles */
+.dashboard {
+  padding: 20px;
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.card-section {
+  margin-top: 20px;
+}
+
+.card-header {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 10px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Auto height for flexibility */
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer; /* Ensure cursor is a pointer when hovering over cards */
+}
+
+.card canvas {
+  max-height: 500px; /* Increased height for better visibility */
+  width: 100%; /* Stretch width within the card */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: auto; /* Prevents the modal from growing */
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1000px;
+  height: 80%; /* Set a fixed height for the modal */
+  overflow-y: auto; /* Allows scrolling inside the modal */
+}
+
+.modal .card {
+  height: 100%; /* Ensure the card takes up full available space */
+  padding: 0; /* Remove padding for cleaner view */
+}
+
+.modal .card canvas {
+  height: 100%; /* Ensure the chart fits within the card */
+  max-height: 100%; /* Prevents the chart from exceeding the modal size */
+}
+
+/* Ensure modal content is not overflowing or resizing incorrectly */
+.modal-content {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
